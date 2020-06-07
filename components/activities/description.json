@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_activities_descriptions",
+  "info": {
+    "name": "description",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "ES": {
+      "type": "text"
+    },
+    "DE": {
+      "type": "text"
+    },
+    "EN": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_activities_sub_title_mains",
+  "info": {
+    "name": "subTitleMain",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "EN": {
+      "type": "string"
+    },
+    "ES": {
+      "type": "string"
+    },
+    "DE": {
+      "type": "string"
+    }
+  }
+}

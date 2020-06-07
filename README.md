@@ -1,2 +1,4 @@
-# strapi_backend
-test backend 
+# Strapi application
+
+A quick description of your strapi application
+``` Username = Admin Password = PASSWORD
