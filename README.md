@@ -3,5 +3,5 @@
 
 ## Strapi Crendtials
 
-Username = Admin 
+Username = Admin
 Password = PASSWORD
