@@ -1,4 +1,7 @@
-# Strapi application
 
-A quick description of your strapi application
-``` Username = Admin Password = PASSWORD
+# TEST APPLICATION
+
+## Strapi Crendtials
+
+Username = Admin 
+Password = PASSWORD
