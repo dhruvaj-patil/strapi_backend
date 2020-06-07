@@ -7,7 +7,7 @@
 
 const { sanitizeEntity } = require("strapi-utils");
 
-  
+
 
 module.exports = {
   priceUpdate: async (ctx) => {
@@ -44,6 +44,21 @@ module.exports = {
 
   sendEmail: async (ctx) => {
     // Send an email to validate his subscriptions.
+   
+  },
+
+  create: async(ctx) => {
+    
+    let entity;
+    if (ctx.is('multipart')) {
+      const { data, files } = parseMultipartData(ctx);
+      entity = await strapi.services.activities.create(data, { files });
+    } else {
+      entity = await strapi.services.activities.create(ctx.request.body);
+    }
+
+    entity = sanitizeEntity(entity, { model: strapi.models.activities });
+
     strapi.services.activities.send(
       "test@test.com",
       "info@mallorcard.es",
@@ -52,8 +67,7 @@ module.exports = {
     );
 
     // Send response to the server.
-    ctx.send({
-      ok: true,
-    });
+    return entity;
+
   },
 };
