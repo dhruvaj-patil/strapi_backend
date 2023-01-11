@@ -12,7 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "i": "^0.3.6",
-    "knex": "<0.20.0",
+    "knex": "<2.5.0",
     "mysql": "latest",
     "nodemailer": "^6.4.8",
     "strapi": "3.0.1",
